@@ -31,7 +31,6 @@ def run(playwright: Playwright) -> None:
     page.get_by_role("button", name="").first.click(click_count=3)
     page.get_by_role("button", name="").click()
     page.get_by_role("button", name="关闭").click()
-
     # ---------------------
     context.close()
     browser.close()
